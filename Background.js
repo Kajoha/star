@@ -7,6 +7,7 @@ export default class Background {
     height = '';
     backgroundColor = '';
     counter = '';
+
     constructor(color, canvas, ctx) {
         this.color = color;
         this.canvas = canvas;
@@ -17,10 +18,6 @@ export default class Background {
         this.canvas.height = this.height;
         this.backgroundColor = this.color;
         this.counter = 0;
-    }
-
-    helloWorld() {
-        return 'Hello World';
     }
 
     randomInt(max) {
@@ -77,18 +74,6 @@ export default class Background {
                 `rgba(131, 104, 207, ${opacity}`,
             );
         }
-
-        /*stars.forEach(function (star, i) {
-          const factor = this.counter * i;
-          const opacity = getOpacity(factor);
-          this.fillCircle(
-            this.ctx,
-            star.x,
-            star.y,
-            star.r,
-            `rgba(131, 104, 207, ${opacity}`,
-          );
-        });*/
 
         this.counter++;
         requestAnimationFrame(this.render);

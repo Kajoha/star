@@ -1,7 +1,7 @@
 export default class Background {
     color = '';
-    canvas = document.querySelector("#canvas");;
-    ctx = canvas.getContext("2d");;
+    canvas = '';
+    ctx = '';
     color = '';
     width = '';
     height = '';

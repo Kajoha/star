@@ -2,7 +2,6 @@ export default class Background {
     color = '';
     canvas = '';
     ctx = '';
-    color = '';
     width = '';
     height = '';
     backgroundColor = '';
